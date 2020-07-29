@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
-import Board from './components/Board.js'
+import Board from './components/Board'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import TopBar from './components/TopBar'
+import BottomBar from './components/BottomBar'
 import './App.css'
 
 
@@ -16,8 +20,8 @@ function App() {
       let rows = []
       for (let j = 0; j < newBoardSize; j++) {
         rows.push({
-          valueX: j,
-          valueY: i,
+          axisX: j,
+          axisY: i,
           isAlive: false
         })
       }
@@ -32,14 +36,26 @@ function App() {
       createBoard(newSize)
     }
     setSize(boardSize)
-  }, [boardSize])
+  }, [boardSize]);
 
-  <h1> Conway Game of Life</h1>
+  function toggleAliveState(cell) {
+    let currentBo = currentBoard.slice()
+    currentBo[cell.axisY][cell.axisX].isAlive = !cell.isAlive
+    setCurrentBoard(currentBo)
+  }
+  return (
+    <div className="App">
+
+  // <h1>Conway Game of Life</h1>
+  <Header />
+  <TopBar />
   <AppWrapper>
     <GameWrapper>
-      <Board currentBoard={currentBoard} size={boardSize} />
+    <Board currentBoard={currentBoard} size={boardSize} toggleAliveState={toggleAliveState} />
     </GameWrapper>
   </AppWrapper>
+  <BottomBar />
+  <Footer />
 </div>
 );
 }
@@ -50,6 +66,7 @@ const AppWrapper = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
+margin-bottom: 20px;
 `
 
 const GameWrapper = styled.div`

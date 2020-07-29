@@ -1,4 +1,17 @@
 .App {
+
+display: flex;
+  flex-direction: column;
+justify-content: space-between;
+text-align: center;
+/* border:2px solid red; */
+}
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +48,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
