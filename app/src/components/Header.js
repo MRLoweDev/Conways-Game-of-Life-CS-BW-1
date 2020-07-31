@@ -12,10 +12,10 @@ export default function Header() {
 }
 
 const HeaderWrapper = styled.div`
-    background-color:grey;
+    background-color:blue;
     display: flex;
     align-items: center;
-    height: 33px;
+    height: 50px;
     text-align: center;
     justify-content: center;
     margin-bottom:1rem;

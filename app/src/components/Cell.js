@@ -16,8 +16,8 @@ export default function Cell(props) {
 }
 
 const CellWrapper = styled.button`
-height: 20px;
-width: 20px;
+height: 15px;
+width: 15px;
 border: 0.1px gray solid;
 text-align: center;
 background: ${(props) => (props.isAlive ? 'red' : 'white')};
