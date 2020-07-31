@@ -47,15 +47,15 @@ const PresetBoardWrapper = styled.div`
     flex-direction: column;
     button{
         margin:2rem;
-        border: 1px solid grey;
+        border: 7px green;
         padding: 5px 20px;
         background-color: white;
         border-radius: 5px;
         font-size: 0.9rem;
-        color: rgb(71, 71, 71);
+        color: black;
         font-family: 'VT323';
         :hover{
-            background-color: grey;
+            background-color: pink;
             cursor:pointer;
         }
     }

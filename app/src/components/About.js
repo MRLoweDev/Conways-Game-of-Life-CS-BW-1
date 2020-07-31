@@ -33,4 +33,6 @@ export default function About() {
 }
 
 const AboutWrapper = styled.div`
+text-color: white;
+
 ` 

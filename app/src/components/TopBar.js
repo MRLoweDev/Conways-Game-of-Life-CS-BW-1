@@ -10,3 +10,8 @@ export default function TopBar(props){
         </div>
     )
 }
+
+// const TopBar = styled.div`
+// font-color: white;
+
+// `

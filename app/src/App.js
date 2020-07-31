@@ -61,6 +61,6 @@ const LinkWraper = styled.div`
     a{
   
       &:hover {
-        color: red;
+        color: pink;
       }
 ` 

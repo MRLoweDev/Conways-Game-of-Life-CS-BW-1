@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <FooterWrapper>
             <p>
-                Created By Michael Lowe
+                Created By MRLoweDev
             </p>
         </FooterWrapper>
     )
